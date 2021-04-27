@@ -69,8 +69,7 @@ header {
 (CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, 
 Contextual Selectors, of the textbook)*/
 
-
-body > img {
+img {
     display: block
     text-align: center;
     margin: auto;
@@ -176,6 +175,6 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 /* List Style Type*/
 
 
-ol {
+ul {
     list-style-type: disc;
 }
