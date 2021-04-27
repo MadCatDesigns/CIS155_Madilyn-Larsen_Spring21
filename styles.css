@@ -154,7 +154,7 @@ nav ul > li {
 }
 
 nav > ul > li > a:link {
-    font-style: sans-serif;
+    font-family: Optima, sans-serif;
     padding-top: 2px;
     padding-right: 8px;
     padding-bottom: 2px;
