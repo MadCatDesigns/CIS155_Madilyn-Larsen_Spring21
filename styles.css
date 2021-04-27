@@ -131,7 +131,7 @@ p {
 Below is the use of an attribute selector named elem.class */
 
 
-a :li.hover {
+a > li.hover {
     color: grey;
 }
 
