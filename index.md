@@ -1,7 +1,7 @@
 <link><a href="index.html"></link>
 <link><a href="aboutpg.html"></link>
 <link><a href="styles.css"></link>
-<link><a href="me pic.png"></link>
+<link><a href="me pic.jpg"></link>
 <link><a href="yin&yangdrw.jpg"></link>
 
 <nav> 
