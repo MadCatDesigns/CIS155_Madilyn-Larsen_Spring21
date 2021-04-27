@@ -115,7 +115,7 @@ Below I use the pseudo-element named first-letter. */
 
 
 p::first-letter {
-    tect-transformation: capitalize;
+    text-transformation: capitalize;
 }
 
 p {
