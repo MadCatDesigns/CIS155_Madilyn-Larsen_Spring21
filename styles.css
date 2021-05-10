@@ -41,8 +41,13 @@ h1, img, p, nav {
     background: transparent;
     display: block;
     font-size: 100%;
+    webkit-box-sizing: content-box;
+    moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 
+/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+   Above I use a webkit and moz prefix style browser. */
 
 /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
    above is the use of progressive enhancement because there are two provided background colors if older browsers cannot recognize hsl */
