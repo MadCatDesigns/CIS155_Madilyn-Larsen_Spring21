@@ -1,8 +1,7 @@
 
-
 <!-- 
     Name: Madilyn Larsen
-    Date: 5/9/21
+    Date: 5/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -13,9 +12,13 @@
 <html lang="en">
 
 <header>
-    <img src="Artheader.jpg" width="1500" height="230">
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt="">
+
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
     <meta name="author" content="Madilyn Larsen" />
 </header>
@@ -28,15 +31,20 @@
      Below is the use of a site navigation hyperlink. -->
 
 
-<nav> 
-    <ul>
-        <li><a href="homepageindex.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
-    </ul>
-</nav>
+     <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html"><a class="burger">&#9776;</a>Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<body>
 
 
 <!-- (#1) M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
@@ -96,21 +104,32 @@ Within the paragraph element below is the use of class selector named #id -->
 
 <p>Coming Soon- Art Instagram account from Madilyn Larsen</p>
 
+<p id="line"></p>
 
 
 <!--Note: I have been wanting to make an instagram for my drawings, I should have time to do this before quater ends. 
     This is a REMINDER to do so
 -->
 
+<!-- M6LO3 Demonstrate how to create a table.
+   Below I have created a table with three rows, this table serves as my footer.  -->
+
+<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+     Below I use multiple rows in a table.-->
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
+
+</body>
 
 </html>
 
-
-
-
-<!--Note: I have been wanting to make an instagram for my drawings, I should have time to do this before quater ends. 
-    This is a REMINDER to do so
--->
-
-
-</html>
