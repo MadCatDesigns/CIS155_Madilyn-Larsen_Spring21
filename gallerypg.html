@@ -1,6 +1,6 @@
 <!-- 
     Name: Madilyn Larsen
-    Date: 4/23/21
+    Date: 5/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -12,22 +12,29 @@
 <html lang="en">
 
 <header>
-    <img src="Artheader.jpg" width="1500" height="230">
+    <title>Madilyn's Art Portfolio</title>
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt="">
+
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
     <meta charset="utf-8" />
     <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
     <meta name="author" content="Madilyn Larsen" />
     </header>
 
-<nav> 
-    <ul>
-        <li><a href="homepageindex.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html">&#9776;Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
 <body>
     <header><h1>Drawings</h1></header>
@@ -56,11 +63,11 @@
         <figcaption>Sphere Shading</figcaption>
     </figure>   
     <figure class="figurestyle6">
-        <img src="catinscarf.jpg" alt="drawing" height="261">
+        <img src="catinscarf.jpg" alt="drawing">
         <figcaption>Simplistic Cat</figcaption>
     </figure>   
     <figure class="figurestyle7">
-        <img src="turtleinscarf.jpg" alt="drawing" height="261">
+        <img src="turtleinscarf.jpg" alt="drawing">
         <figcaption>Simplistic Turtle</figcaption>
     </figure>    
     <figure class="figurestyle8">
@@ -68,7 +75,7 @@
         <figcaption>Simplistic Dog</figcaption>
     </figure>    
     <figure class="figurestyle9">
-        <img src="bunnyinscarf.jpg" alt="drawing" height="261">
+        <img src="bunnyinscarf.jpg" alt="drawing">
         <figcaption>Simplistic Bunny</figcaption>
     </figure>    
     <figure class="figurestyle10">
@@ -96,23 +103,23 @@
         <figcaption>Hellow Darling</figcaption>
     </figure>    
     <figure class="figurestyle16">
-        <img src="discipline.jpg" alt="drawing" height="261">
+        <img src="discipline.jpg" alt="drawing">
         <figcaption>The Choice</figcaption>
     </figure>    
     <figure class="figurestyle17">
-        <img src="mindlimit.jpg" alt="drawing" height="261">
+        <img src="mindlimit.jpg" alt="drawing">
         <figcaption>The Only Limit</figcaption>
     </figure>    
     <figure class="figurestyle18">
-        <img src="dontgiveup.jpg" alt="drawing" height="261">
+        <img src="dontgiveup.jpg" alt="drawing">
         <figcaption>Not Giving Up</figcaption>
     </figure>
     <figure class="figurestyle19">
-        <img src="opalgirl.jpg" alt="drawing" height="261">
+        <img src="opalgirl.jpg" alt="drawing">
         <figcaption>Opal Gemstone Character</figcaption>
     </figure>
     <figure class="figurestyle20">
-        <img src="tourmalinegirl.jpg" alt="drawing" height="261">
+        <img src="tourmalinegirl.jpg" alt="drawing">
         <figcaption>Tourmaline Gemstone Character</figcaption>
     </figure>    
     <figure class="figurestyle21">
@@ -197,7 +204,20 @@
 
     <header><h1>Photography</h1></header>
     <!-- Note: Add in Photography pics later. -->
+    <p>I will be adding pics here later.</p>
 
 </body>
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
 
 </html>
