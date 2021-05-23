@@ -1,0 +1,134 @@
+
+<!-- 
+    Name: Madilyn Larsen
+    Date: 5/9/21
+    Course: CIS 155
+    Instructor: Linda Epps
+    Assignment: Basic Site for CIS 155
+    Notes:
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt="">
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
+    <meta name="author" content="Madilyn Larsen" />
+</header>
+
+
+<!-- M1LO12 Create navigation using unordered lists (HTML) 
+     Below I use unordered list (ul) for the navigation-->
+<!-- (#1) M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
+    (HTML, this item should be specified 3 times, once on each type of link)
+     Below is the use of a site navigation hyperlink. -->
+
+
+     <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html"><a class="burger">&#9776;</a>Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<body>
+
+
+<!-- (#1) M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
+    (HTML, this item should be specified once, describing how the file it is in meets this outcome)
+Below is the basic html tag named body. -->
+
+<!--  M1LO9 Demonstrate the use of inline images (HTML)
+      below is the use of an inline image. -->
+
+
+<img class="yin" src="fadedyin&yang.png" alt="yin" 
+width="1500px" height="600px"/>
+
+<header>
+    <h1>Intro</h1>
+</header>
+
+<p id="about"></p>
+
+
+<!-- (#2) M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
+    (HTML, this item should be specified 3 times, once on each type of link) 
+Within the paragraph element is a hyperlink to an about page using an id.-->
+<!-- (#1) M2LO6  Demonstrate a CSS id and a CSS class selector 
+    (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+Within the paragraph element below is the use of class selector named #id -->
+
+
+<p>Welcome to my art portfolio website! In this website you can browse through my artwork, look at the materials I used, 
+   and a little bit <a href="aboutpg.html#about">about</a> me in the pages above. I originally created this website for a computer information system class I took at 
+   Olympic College in the spring of 2021, but I wanted this website to be useful to me after the class which is why I created a 
+   protfolio website. I will occasionally update my website with finished artworks and ones I am currently working on, you can see works
+   in progress in the New page above in the navigation bar. Hope you like my work!
+   - Madilyn Larsen
+</p>
+
+<header>
+    <h1>Contacts</h1>
+</header>
+
+
+<!-- M1LO7 Demonstrate the use of ordered lists (HTML) -->
+
+<!-- (#3)  M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
+    (HTML, this item should be specified 3 times, once on each type of link) -->
+
+
+<p>Email Address:</p>
+     <li ><a href="mailto:jade.madilyn@gmail.com">
+    jade.madilyn@gmail.com
+    </a></li>
+
+<p>Phone Number:</p>
+    <li><a href="tel:+3606897227">
+    (360).689.7227
+    </a></li>
+
+<p>Coming Soon- Art Instagram account from Madilyn Larsen</p>
+
+<p id="line"></p>
+
+
+<!--Note: I have been wanting to make an instagram for my drawings, I should have time to do this before quater ends. 
+    This is a REMINDER to do so
+-->
+
+<!-- M6LO3 Demonstrate how to create a table.
+   Below I have created a table with three rows, this table serves as my footer.  -->
+
+<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+     Below I use multiple rows in a table.-->
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
+
+</body>
+
+</html>
