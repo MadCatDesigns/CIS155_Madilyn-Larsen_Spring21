@@ -1,4 +1,6 @@
-@charset "utf-8"
+@charset "utf-8";
+
+@import url("mediaqueries.css") handheld, screen;
 
 @font-face {
     font-family: Advantgarde,TeX Gyre Adventor, URW Gothic L, sans-serif;
@@ -41,13 +43,14 @@ h1, img, p, nav {
     background: transparent;
     display: block;
     font-size: 100%;
-    webkit-box-sizing: content-box;
-    moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
+
 /* M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
-   Above I use a webkit and moz prefix style browser. */
+   Above I use a webkit and moz prefix style brwoser. */
 
 /* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
    above is the use of progressive enhancement because there are two provided background colors if older browsers cannot recognize hsl */
@@ -69,7 +72,7 @@ header > h1 {
     text-align: left;
     padding-top: 30px;
     padding-right: 4px;
-    padding-bottom: 40px;
+    padding-bottom: 1px;
     padding-left: 4px;
     margin: 0px
 }
@@ -85,8 +88,8 @@ Contextual Selectors, of the textbook)*/
 
 
 body > img {
-    display: block
-    ;text-align: center;
+    display: block;
+    text-align: center;
     margin: auto;
 }
 
@@ -109,9 +112,43 @@ body > img {
     text-align: center;
 }
 
+hr {
+    border-top: 1px dotted rgb(66, 63, 64);
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+/* M6LO7 Demonstrate how to format a table with CSS.
+   Below I have formated a table in CSS creating the table styles such as the border. */
+
+
+table, tr, td {
+    width: 100%;
+    border: 1px solid rgb(66, 63, 64);
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+td {
+    width: 33%;
+}
+
 
 /* Typography */
 
+
+body > p {
+    padding-top: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
 
 nav {
     background-color: white;
@@ -153,7 +190,7 @@ Below I use the pseudo-element named first-letter. */
 
 
 p::first-letter {
-    text-transformation: capitalize;
+    text-transform: capitalize;
 }
 
 p {
@@ -229,15 +266,12 @@ section.mountain > img {
 
 /* Figures & Figcaption Styles */
 
-figure {
-    width: 13%;
-    border: 2px black solid;
-    float: left;
-}
 
 /* M3LO2 Demonstrate floating elements 
-   Above within the figure element I use a float and this impacts how the images are displayed within my gallery. */
+   Above within the figure element I use a float and this impacts how the images are displayed within my gallery.
+   (deleted in V3) */
 
+/* deleted in V3 
 figure.figurestyle6 {
     clear: left;
 }
@@ -255,7 +289,7 @@ figure.figurestyle26 {
 }
 figure.figurestyle36 {
     clear: left;
-}
+} */
 
 figure > img {
     display: block;
@@ -264,27 +298,19 @@ figure > img {
 }
 
 /* M3LO8A Demonstrate absolute positioning
-   Below I use absolute position on this one figure. */
+   Below I use absolute position on this one figure. 
+   (deleted in V3)*/
 
-   body > figure.figurestyle39 {
-    position: absolute;
-    top: 2695px;
-    left: 848px;
-}
 
-figure > figcaption {
-    background-color: rgb(231, 230, 230);
-    font-family: Optima, sans-serif;
-    text-align: center;
-}
+
 
 /* Grid Styles */
 
 /* M3LO6 Demonstrate formatting a grid.
    Below are the CSS rules for the gird using divs. */
 
-div.row {
-    clear: both;
+div.col-1-2 {
+    float: left;
 }
 
 div.row::after {
@@ -298,23 +324,19 @@ div[class^="col-"] {
 
 div.col-2-3 {width: 66.67%;}
 div.col-1-3 {width: 33.33%}
+div.col-1-2 {width: 50%}
 
 
 /* Navigation Style */ 
 
 
 nav { 
-    padding: 8px;
+    padding: 5px;
     display: block;
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
-}
-
-nav ul > li {
-    display: inline;
 }
 
 nav > ul > li > a:link {
@@ -337,38 +359,34 @@ nav > ul > li > a:hover, nav > ul > li > a:active {
 }
 
 
+
 /* List Style Type*/
 
 li.paper {
     list-style-image: url(paper.jpg);
     padding: 10px;
-    margin-left: 100px;
     margin-top: 100px;
 }
 
 li.utensils {
     list-style-image: url(pencils2.jpg);
     padding: 10px;
-    margin-left: 100px;
     margin-top: 100px;
 }
 
 li.tools {
     list-style-image: url(tools.jpg);
     padding: 10px;
-    margin-left: 100px;
     margin-top: 100px;
 }
 
 li.camera {
     list-style-image: url(camera.jpg);
     padding: 10px;
-    margin-left: 100px;
     margin-top: 100px;
 }
 
 body > div > ul {
-    margin-top: 20px;
     margin-left: 50px;
     vertical-align: middle;
 }
