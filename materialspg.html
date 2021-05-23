@@ -13,22 +13,30 @@
 <html lang="en">
 
 <header>
-    <img src="Artheader.jpg" width="1500" height="230">
+    <title>Madilyn's Art Portfolio</title>
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt="">
+
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
     <meta name="author" content="Madilyn Larsen" />
     </header>
 
-<nav> 
-    <ul>
-        <li><a href="homepageindex.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html">&#9776;Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
 
 <!-- M3LO6 Demonstrate formatting a grid.
@@ -64,12 +72,12 @@
      Below I use image maps and I determined x and y values -->
 
         <div class="row">
-            <div class="col-1-2"><img src="drawingpaper.jpg" usemap="#drawing paper" width="250" height="125">
+            <div class="col-1-2"><img class="dpap" src="drawingpaper.jpg" usemap="#drawing paper" height="125">
                 <map name="drawing paper">
                     <area shape="rect" coords="3, 2, 3789, 1829" href="https://www.michaels.com/strathmore-400-series-recycled-drawing-pad/10068168.html?r=g">
                 </map>
             </div>
-            <div class="col-1-2"><img src="sketchpaper.jpg" usemap="#sketch paper" width="250" height="125">
+            <div class="col-1-2"><img class="spap" src="sketchpaper.jpg" usemap="#sketch paper" height="125">
                 <map name="sketch paper">
                     <area shape="rect" coords=" 3, 1, 86, 64" href="https://www.michaels.com/strathmore-300-series-newsprint-mega-paper-pad/10014386.html?r=g
                     &cm_mmc=PLASearch-_-google-_-MICH_Shopping_US_N_Art+Supplies_N_Smart_BOPIS_N-_-&Kenshoo_ida=&kpid=go_cmp-9972406790_adg-106296476328_ad-433
@@ -79,47 +87,59 @@
         </div>
 
         <div class="row">
-            <div class="col-1-2"><img src="pencilkit.jpg" width="250" height="125">
+            <div class="col-1-2"><img class="penkit" src="pencilkit.jpg" height="125">
             </div>
-            <div class="col-1-2"><img src="compressedchar.jpg" width="250" height="125">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-2"><img src="vinechar.jpg" width="250" height="125">
-            </div>
-            <div class="col-1-2"><img src="artboard.jpeg" width="250" height="125">
+            <div class="col-1-2"><img class="cchar" src="compressedchar.jpg" height="125">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-1-2"><img src="blendingsticks.jpg" width="250" height="125">
+            <div class="col-1-2"><img class="vchar" src="vinechar.jpg" height="125">
             </div>
-            <div class="col-1-2"><img src="easel.jpeg" width="250" height="125">
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-1-2"><img src="sandblock.jpg" width="250" height="125">
-            </div>
-            <div class="col-1-2"><img src="kneadederaser.jpg" width="250" height="125">
+            <div class="col-1-2"><img class="ab" src="artboard.jpeg" height="125">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-1-2"><img src="plasticeraser.jfif" width="250" height="125">
+            <div class="col-1-2"><img class="blenstick" src="blendingsticks.jpg" height="125">
             </div>
-            <div class="col-1-2"><img src="ruler.jfif" width="250" height="125">
+            <div class="col-1-2"><img class="easel" src="easel.jpeg" height="125">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-1-2"><img src="justcamera.jpg" width="250" height="125">
+            <div class="col-1-2"><img class="sb" src="sandblock.jpg" height="125">
             </div>
-            <div class="col-1-2"><img src="zoomlens.jpg" width="250" height="125">
+            <div class="col-1-2"><img class="kre" src="kneadederaser.jpg" height="125">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-2"><img class="pe" src="plasticeraser.jfif" height="125">
+            </div>
+            <div class="col-1-2"><img class="ruler" src="ruler.jfif" height="125">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-2"><img class="cam" src="justcamera.jpg" height="125">
+            </div>
+            <div class="col-1-2"><img class="lenscam" src="zoomlens.jpg" height="125">
             </div>
         </div>
     </div>
 </body>
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
 
 </html>
