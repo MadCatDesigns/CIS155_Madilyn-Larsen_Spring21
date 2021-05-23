@@ -12,41 +12,61 @@
 <html lang="en">
 
 <header>
-    <img src="Artheader.jpg" width="1500" height="230">
+    <title>Madilyn's Art Portfolio</title>
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt ="">
+
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
     <meta name="author" content="Madilyn Larsen" />
     </header>
 
-<nav> 
-    <ul>
-        <li><a href="homepageindex.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html">&#9776;Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
 <body>
     <p>This page shows artwork that I am either still working on or is unfinished.</p>
     <section>
-        <img class="characters" src="chheads.jpg" width="500" height="300">
-        <img class="characters2" src="chfinalizedsketch.jpg" width="500" height="300">
+        <img class="characters" src="chheads.jpg" >
+        <img class="characters2" src="chfinalizedsketch.jpg" >
         <p>Character Sketches</p>
     </section>
 
     <section>
-        <img  class="face" src="facedrawing.jpg" width="350" height="450">       
-        <img  class="face2" src="facedrawingsketch.jpg" width="350" height="450">
+        <img  class="face" src="facedrawing.jpg" >       
+        <img  class="face2" src="facedrawingsketch.jpg" >
         <p>Face drawing that is unfinished.</p>
     </section>
 
-    <section class="mountain">
-        <img src="mountainsketch.jpg" width="550" height="350">
+    <section>
+        <img class="mountain" src="mountainsketch.jpg">
         <p>An unfinished mountain drawing of Mt.Reiner.</p>
     </section>
 </body>
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
 
 </html>
