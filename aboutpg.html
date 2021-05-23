@@ -1,6 +1,6 @@
 <!-- 
     Name: Madilyn Larsen
-    Date: 4/23/21
+    Date: 5/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -13,20 +13,28 @@
 <html lang="en">
 
 <header>
-    <img src="Artheader.jpg" width="1500" height="230">
+    <title>Madilyn's Art Portfolio</title>
+    <img class="header"  src="Artheader.jpg" width="1500" height="230" alt="">
+
     <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" type="text/css" />
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
     <meta name="author" content="Madilyn Larsen" />
 </header>
     
-<nav> 
+<nav>
     <ul>
-        <li><a href="homepageindex.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
+        <li><a class="main" href="homepageindex.html">&#9776;Home</a>
+            <ul class="sub">
+                <li><a href="aboutpg.html" >About</a></li>
+                <li><a href="gallerypg.html" >Gallery</a></li>
+                <li><a href="materialspg.html" >Materials</a></li>
+                <li><a href="newpg.html" >New</a></li>
+            </ul>
+        </li>
     </ul>
 </nav>
     
@@ -57,6 +65,18 @@ Below I use the class selection within the div and img to specify to center the 
 
 
 </body>
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
 
 </html>
 
