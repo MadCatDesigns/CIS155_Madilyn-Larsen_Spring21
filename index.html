@@ -1,6 +1,6 @@
 <!-- 
     Name: Madilyn Larsen
-    Date: 5/9/21
+    Date: 5/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -10,14 +10,17 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <header>
-        <title>Madilyn's Art Portfolio</title>
-        <img src="Artheader.jpg" width="1500" height="230" alt="">
-        <link href="styles.css" rel="stylesheet" />
-        <meta charset="utf-8" />
-        <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
-        <meta name="author" content="Madilyn Larsen" />
-    </header>
+<header>
+    <img class="header" src="Artheader.jpg" width="1500" height="230" alt="">
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="mediaqueries.css" media="handheld, screen" type="text/css" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="portfolio, art, photography, Madilyn Larsen" />
+    <meta name="author" content="Madilyn Larsen" />
+</header>
 
 
 <!-- M1LO12 Create navigation using unordered lists (HTML) 
@@ -27,15 +30,20 @@
      Below is the use of a site navigation hyperlink. -->
 
 
-<nav> 
-    <ul>
-        <li><a href="index.html" >Home</a></li>
-        <li><a href="aboutpg.html" >About</a></li>
-        <li><a href="gallerypg.html" >Gallery</a></li>
-        <li><a href="materialspg.html" >Materials</a></li>
-        <li><a href="newpg.html" >New</a></li>
-    </ul>
-</nav>
+     <nav>
+        <ul>
+            <li><a class="main" href="homepageindex.html"><a class="burger">&#9776;</a>Home</a>
+                <ul class="sub">
+                    <li><a href="aboutpg.html" >About</a></li>
+                    <li><a href="gallerypg.html" >Gallery</a></li>
+                    <li><a href="materialspg.html" >Materials</a></li>
+                    <li><a href="newpg.html" >New</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+<body>
 
 
 <!-- (#1) M1LO6 Demonstrate the use of basic HTML tags to create a simple Web page 
@@ -50,7 +58,7 @@ Below is the basic html tag named body. -->
 width="1500px" height="600px"/>
 
 <header>
-    <h2>Intro</h2>
+    <h1>Intro</h1>
 </header>
 
 <p id="about"></p>
@@ -73,38 +81,53 @@ Within the paragraph element below is the use of class selector named #id -->
 </p>
 
 <header>
-    <h3>Contacts</h3>
+    <h1>Contacts</h1>
 </header>
 
 
 <!-- M1LO7 Demonstrate the use of ordered lists (HTML) -->
 
 <!-- (#3)  M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external 
-    (HTML, this item should be specified 3 times, once on each type of link)
-Below is the use of an external hyperlink because it is a link to my email and phone. -->
+    (HTML, this item should be specified 3 times, once on each type of link) -->
 
 
-<p>
-     Email Address:
+<p>Email Address:</p>
      <li ><a href="mailto:jade.madilyn@gmail.com">
     jade.madilyn@gmail.com
     </a></li>
-</p>
 
-<p> Phone Number:
+<p>Phone Number:</p>
     <li><a href="tel:+3606897227">
     (360).689.7227
     </a></li>
-</p>
 
-<a>
-    Coming Soon- Art Instagram account from Madilyn Larsen
-</a>
+<p>Coming Soon- Art Instagram account from Madilyn Larsen</p>
+
+<p id="line"></p>
 
 
 <!--Note: I have been wanting to make an instagram for my drawings, I should have time to do this before quater ends. 
     This is a REMINDER to do so
 -->
 
+<!-- M6LO3 Demonstrate how to create a table.
+   Below I have created a table with three rows, this table serves as my footer.  -->
+
+<!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
+     Below I use multiple rows in a table.-->
+
+<hr></hr>
+
+<footer>
+    <table>
+        <tr>
+            <td>Art Portfolio</td>
+            <td>Olympic College CIS 155</td>
+            <td>&#169; 2021 Madilyn Larsen</td>
+        </tr>
+    </table>
+</footer>
+
+</body>
 
 </html>
