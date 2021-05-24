@@ -105,7 +105,8 @@ body {
 
 img.yin {
     background-image: url(fadedyin&yang.png);
-    background-size: 1500px 600px;
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
 }
 
 body > img {
