@@ -102,8 +102,12 @@ body {
 
 /* M4LO2 Demonstrate the use of background images (CSS)
    Below I use a background image for my picture.
-   (deleted in V3 and put in mediaquery css)*/
-
+*/
+img.yin {
+    background-image: url(fadedyin&yang.png);
+    background-repeat: no-repeat;
+    background-size: 600px 600px;
+}
 
 body > img {
     text-align: center;
