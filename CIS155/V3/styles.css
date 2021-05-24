@@ -1,0 +1,393 @@
+@charset "utf-8";
+
+@import url("mediaqueries.css") handheld, screen;
+
+@font-face {
+    font-family: Advantgarde,TeX Gyre Adventor, URW Gothic L, sans-serif;
+    src: url(Advantgarde.woff) format('woff');
+    src: url(Advantgarde.ttf) format('truetype');
+}
+@font-face {
+    font-family: Optima, sans-serif;
+    src: url(Optima.woff) format('woff');
+    src: url(Optima.ttf) format('truetype');
+}
+@font-face {
+    font-family: Gayathri; 
+    src: url(https://fonts.googleapis.com/css?family=Gayathri);
+}
+/* Not sure if I am allowed to use the gayathri font, the optima and advatgard fonts defaulted to sans-serif most likely
+   because the woff and ttf files don't have anything in them but I dont know what or how to put font in them. 
+REMINDER to cite/@import url */
+/*
+    Name: Madilyn Larsen
+    Date: 5/23/21
+    Course: CIS 155
+    Instructor: Linda Epps
+    Assignment: Basic Site for CIS 155
+    Notes:
+*/
+
+/* Layout */
+
+html {
+    background-color: rgb(248, 230, 234);
+    background-color: hsl(339, 50%, 95%)
+}
+
+/* M3LO1 Demonstrate the use of a CSS reset style sheet
+Below I have reset the CSS style rules. */
+
+body, div, figure, figcaption, footer, header, 
+h1, img, p, nav {
+    background: transparent;
+    display: block;
+    font-size: 100%;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+/* M3LO11 Demonstrate -prefix- style browser extensions use in CSS (CSS note the use in your CSS and what the purpose is)
+   Above I use a webkit and moz prefix style brwoser. */
+
+/* M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+   above is the use of progressive enhancement because there are two provided background colors if older browsers cannot recognize hsl */
+
+   /* M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+The background color above is using color in css. */
+
+/* (#1) M2LO4 Demonstrate external, embedded, and inline styles 
+(HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; 
+see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) */
+
+/* /* M2LO12 Demonstrate how CSS can change presentation of page elements 
+(CSS, these are styles that impact page elements rather than impacting text on the page)
+Below CSS changes the presentation of the header element. 
+*/
+
+
+header > h1 {
+    text-align: left;
+    padding-top: 30px;
+    padding-right: 4px;
+    padding-bottom: 1px;
+    padding-left: 4px;
+    margin: 0px
+}
+
+header {
+    text-align: center;
+}
+
+
+/* (the header and body > img are contextual selectors)  M2LO5 Demonstrate contextual selectors 
+(CSS, specify 2 times, showing two different types of contextual selectors as shown in Figure 2-12, 
+Contextual Selectors, of the textbook)*/
+
+
+body > img {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+/* M3LO10 Demonstrate an overflow setting 
+   Below I use overflow for all bodies in each page, this effects whether the page scrolls or not. */
+
+body {
+    overflow: auto;
+}
+
+/* M4LO2 Demonstrate the use of background images (CSS)
+   Below I use a background image for my picture.
+   (deleted in V3 and put in mediaquery css)*/
+
+
+body > img {
+    text-align: center;
+}
+
+hr {
+    border-top: 1px dotted rgb(66, 63, 64);
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+
+/* M6LO7 Demonstrate how to format a table with CSS.
+   Below I have formated a table in CSS creating the table styles such as the border. */
+
+
+table, tr, td {
+    width: 100%;
+    border: 1px solid rgb(66, 63, 64);
+    border-collapse: collapse;
+    border-top: none;
+    border-bottom: none;
+    text-align: center;
+}
+
+td {
+    width: 33%;
+}
+
+
+/* Typography */
+
+
+body > p {
+    padding-top: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    word-spacing: 12em;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Advantgarde,TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+
+/* M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+   The above word spacing is a textual element.
+/* (#2)  M2LO4 Demonstrate external, embedded, and inline styles 
+(HTML, this item should be specified 2 times, once each for embedded and inline styles; note external was taken care of with M1LO8; 
+see 2-3b Embedded Style Sheets, and 2-3c Inline Styles) 
+*/
+
+
+header {
+    color: black;
+    font-family: Advantgarde,TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 25px;
+}
+header > h1 {
+    font-family: Gayathri;
+    font-size: 50px;
+    word-spacing: 0.4em;
+    text-align: left;
+    clear: left;
+}
+
+/* M3LO3 Demonstrate a clearing floats
+   Above within the header > h1 I use a clear float style which changes where the headings are displayed on the gallery page. */
+
+/* (#2) M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector 
+(CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+Below I use the pseudo-element named first-letter. */
+
+
+p::first-letter {
+    text-transform: capitalize;
+}
+
+p {
+    color: black; 
+    font-family: Optima, sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    padding: 1px; 
+}
+
+/* M2LO7 Demonstrate a CSS attribute selector other than class or id (CSS, specify 1 time, see 2-9b Attribute selectors)
+Below is the use of an attribute selector named elem.class */
+
+
+a > li.hover {
+    color: grey;
+}
+
+/* Section Styles */
+
+/* M3LO8B Demonstrate relative positioning.
+Below in the section element I use relative positioning, which sets the position of the section. */
+
+/* M4LO3 Demonstrate the use of rounded corners for borders (CSS)
+   Within the section below I use a border-radius which creates rounded corners. */
+
+/* M4LO4 Demonstrate the use of gradients (CSS)
+   Below I use a linear gradient for each section. */
+
+section {
+    position: relative;
+    background: linear-gradient(to left, rgb(63, 49, 35),  rgb(131, 115, 100), rgb(63, 49, 35));
+    padding: 50px;
+    border: 3px black solid;
+    border-radius: 70px 70px;
+    margin: 50px;
+    text-align: center;
+}
+
+/* M3LO9 Demonstrate fixed, static, or inherited positioning.
+   Below I use inherited positioning for the images, which sets the position of the image the same as the parent element. */
+
+/* M4LO5 Demonstrate the use of text or box shadowing
+   Below within the section > img I use a box-shadow style that creates a black line on the right and bottome edges of the images. */
+
+section > img {
+    position: inherit;
+    box-shadow: black 5px 5px 2px;
+    display: inline;
+}
+
+section > img.characters  {
+    transform: translate(-70px, -10px) rotate(-4deg);
+}
+section > img.characters2  {
+    transform: translate(70px, -10px) rotate(4deg);
+}
+
+section > img.face {
+    transform: translate(-70px, -10px) rotate(-5deg);
+}
+section > img.face2 {
+    transform: translate(70px, -10px) rotate(5deg);
+}
+
+section.mountain > img {
+    transform: translate(-15px, 5px);
+}
+
+/* M4LO8 Demonstrate the use of transformations for 2D or 3D images
+   Above I use a 2D transformation in each of the sections, which rotates and moves the section img.*/
+
+/* Figures & Figcaption Styles */
+
+
+/* M3LO2 Demonstrate floating elements 
+   Above within the figure element I use a float and this impacts how the images are displayed within my gallery.
+   (deleted in V3) */
+
+/* deleted in V3 
+figure.figurestyle6 {
+    clear: left;
+}
+figure.figurestyle11 {
+    clear: left;
+}
+figure.figurestyle16 {
+    clear: left;
+}
+figure.figurestyle21 {
+    clear: left;
+}
+figure.figurestyle26 {
+    clear: left;
+}
+figure.figurestyle36 {
+    clear: left;
+} */
+
+figure > img {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* M3LO8A Demonstrate absolute positioning
+   Below I use absolute position on this one figure. 
+   (deleted in V3)*/
+
+
+
+
+/* Grid Styles */
+
+/* M3LO6 Demonstrate formatting a grid.
+   Below are the CSS rules for the gird using divs. */
+
+div.col-1-2 {
+    float: left;
+}
+
+div.row::after {
+    clear: both;
+    display: table;
+}
+
+div[class^="col-"] {
+    float: left;
+}
+
+div.col-2-3 {width: 66.67%;}
+div.col-1-3 {width: 33.33%}
+div.col-1-2 {width: 50%}
+
+
+/* Navigation Style */ 
+
+
+nav { 
+    padding: 5px;
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav > ul > li > a:link {
+    font-family: Optima, sans-serif;
+    padding-top: 2px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+}
+
+nav > ul > li > a:link, nav > ul> li > a:visited {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active {
+    color: black;
+    background-color: rgb(224, 230, 228);
+}
+
+
+
+/* List Style Type*/
+
+li.paper {
+    list-style-image: url(paper.jpg);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+li.utensils {
+    list-style-image: url(pencils2.jpg);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+li.tools {
+    list-style-image: url(tools.jpg);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+li.camera {
+    list-style-image: url(camera.jpg);
+    padding: 10px;
+    margin-top: 100px;
+}
+
+body > div > ul {
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+a {
+    list-style-type: disc;
+}
