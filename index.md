@@ -1,13 +1,13 @@
-<link><a href="index.html"/></link>
-<link><a href="homepageindex.html"/></link>
-<link><a href="aboutpg.html"/></link>
-<link><a href="gallerypg.html"/></link>
-<link><a href="materialspg.html"/></link>
-<link><a href="newpg.html"/></link>
-<link><a href="styles.css" rel="stylesheet"/></link>
-<link><a href="mediaqueries.css" rel="stylesheet" type="text/css" /><link>
-<link><a href="mepic.jpg"/></link>
-<link><a href="fadedyin&yang.png"/></link>
+<link><a href="index.html"></a></link>
+<link><a href="homepageindex.html"></a></link>
+<link><a href="aboutpg.html"></a></link>
+<link><a href="gallerypg.html"></a></link>
+<link><a href="materialspg.html"></a></link>
+<link><a href="newpg.html"></a></link>
+<link><a href="styles.css" rel="stylesheet"></a></link>
+<link><a href="mediaqueries.css" rel="stylesheet" type="text/css"></a><link>
+<link><a href="mepic.jpg"></a></link>
+<link><a href="fadedyin&yang.png"></a></link>
 
 <nav>
     <ul>
