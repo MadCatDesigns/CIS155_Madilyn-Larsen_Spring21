@@ -21,7 +21,7 @@
 REMINDER to cite/@import url */
 /*
     Name: Madilyn Larsen
-    Date: 5/23/21
+    Date: 4/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -101,8 +101,8 @@ body {
 }
 
 /* M4LO2 Demonstrate the use of background images (CSS)
-   Below I use a background image for my picture.
-*/
+   Below I use a background image for my picture. */
+
 img.yin {
     background-image: url(fadedyin&yang.png);
     background-repeat: no-repeat;
