@@ -3,7 +3,7 @@
 @import url("mediaqueries.css") handheld, screen; 
 /*
     Name: Madilyn Larsen
-    Date: 5/23/21
+    Date: 5/15/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -63,6 +63,7 @@
     display: block;
     }
 
+    
     img.yin {
         background-repeat: no-repeat;
         background-size: 200px 200px;
@@ -494,6 +495,7 @@
     display: block;
     }
 
+    
     img.yin {
         background-repeat: no-repeat;
         background-size: 400px 400px;
@@ -941,6 +943,7 @@
         display: table;
     }
 
+    
     img.yin {
         background-repeat: no-repeat;
         background-size: 600px 600px;
@@ -1339,3 +1342,4 @@
         width: 100%;
     }
 }
+
