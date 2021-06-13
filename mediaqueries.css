@@ -3,7 +3,7 @@
 @import url("mediaqueries.css") handheld, screen; 
 /*
     Name: Madilyn Larsen
-    Date: 5/15/21
+    Date: 5/23/21
     Course: CIS 155
     Instructor: Linda Epps
     Assignment: Basic Site for CIS 155
@@ -61,6 +61,25 @@
     
     a.main:hover + ul.sub, ul.sub:hover {
     display: block;
+    }
+
+    form#review {
+        display: -webkit-box;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 10%;
+        height: 100%;
+    }
+
+    form#review > fieldset {
+        background-color: rgb(187, 186, 187);
+        color:black;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 0.95em;
+        padding: 10px 10px;
+        margin-left: 10px;
     }
 
     img.yin {
@@ -474,12 +493,14 @@
     }
 
     ul.sub > a:link, ul.sub > a:visited {
+        display: block;
         color: black;
         text-decoration: none;
         background-color: white;
     }
     
-    .sub a:hover, .sub a:active {
+    ul.sub a:hover, .sub a:active {
+        display: block;
         color: black;
         background-color: rgb(224, 230, 228);
     }
@@ -494,6 +515,26 @@
     
     a.main:hover + ul.sub, ul.sub:hover {
     display: block;
+    }
+
+    
+    form#review {
+        display: -webkit-box;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        width: 55%;
+        height: 100%;
+    }
+
+    form#review > fieldset {
+        background-color: rgb(187, 186, 187);
+        color:black;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 0.95em;
+        padding: 10px 10px;
+        margin-left: 10px;
     }
 
     img.yin {
@@ -870,9 +911,31 @@
         height: 100%;
     }
 
-    hr {
-        border-top: 1px dotted rgb(66, 63, 64);
-    }
+    
+hr.i{
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 200px;
+}
+
+hr.a {
+    border-top: 1px dotted rgb(66, 63, 64);
+    display: block;
+}
+
+hr.m {
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 915px;
+    margin-bottom: 0;
+}
+
+hr.g {
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 500px;
+}
+
+hr.n {
+    border-top: 1px dotted rgb(66, 63, 64);
+}
 
     footer {
         display: flex;
@@ -948,8 +1011,10 @@
     img.yin {
         display: -webkit-flex;
         display: flex;
-        width: 100%;
+        width: 50%;
         height: 50%;
+        text-align: center;
+        margin: auto;
     }
     
     img.header {
@@ -965,6 +1030,8 @@
         padding-top: 20px;
         width: 30%;
         height: 50%;
+        text-align: center;
+        margin: auto;
     }
 
     .figurestyle1 {
@@ -1194,62 +1261,163 @@
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle32 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle33 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle34 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle35 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle36 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
+        clear: left;
     }
 
     .figurestyle37 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle38 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
     }
 
     .figurestyle39 {
         display: -webkit-flex;
         display: flex;
         width: 13%;
+        text-align: right;
+    }
+
+    .figurestyle40 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle41 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle42 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle43 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle44 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle45 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+        clear: left;
+    }
+
+    .figurestyle46 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle47 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle48 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle49 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle50 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
+    }
+
+    .figurestyle51 {
+        display: -webkit-flex;
+        display: flex;
+        width: 13%;
+        float: left;
     }
 
     figure {
+        display: -webkit-flex;
+        display: flex;
+        float: left;
         width: 13%;
     }
 
     figure > img {
         border: 2px black solid;
+        display: block;
+        text-align: center;
+        width: 100%;
     }
 
     .dpap {
@@ -1334,9 +1502,31 @@
         height: 50%;
     }
 
-    hr {
-        border-top: 1px dotted rgb(66, 63, 64);
-    }
+    
+hr.i{
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 75px;
+}
+
+hr.a {
+    border-top: 1px dotted rgb(66, 63, 64);
+    display: block;
+}
+
+hr.m {
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 915px;
+    margin-bottom: 0;
+}
+
+hr.g {
+    border-top: 1px dotted rgb(66, 63, 64);
+    margin-top: 500px;
+}
+
+hr.n {
+    border-top: 1px dotted rgb(66, 63, 64);
+}
 
     footer {
         display: flex;
