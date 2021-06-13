@@ -1,3 +1,4 @@
+
 <!-- 
     Name: Madilyn Larsen
     Date: 5/23/21
@@ -32,7 +33,7 @@
 
      <nav>
         <ul>
-            <li><a class="main" href="homepageindex.html">&#9776;Home</a>
+            <li><a class="main" href="homepageindex.html"><a class="burger">&#9776;</a>Home</a>
                 <ul class="sub">
                     <li><a href="aboutpg.html" >About</a></li>
                     <li><a href="gallerypg.html" >Gallery</a></li>
@@ -54,8 +55,7 @@ Below is the basic html tag named body. -->
       below is the use of an inline image. -->
 
 
-<img class="yin" src="fadedyin&yang.png" alt="yin" 
-width="1500px" height="600px"/>
+<img class="yin" src="fadedyin&yang.png" alt="yin" />
 
 <header>
     <h1>Intro</h1>
@@ -79,6 +79,71 @@ Within the paragraph element below is the use of class selector named #id -->
    in progress in the New page above in the navigation bar. Hope you like my work!
    - Madilyn Larsen
 </p>
+
+
+<!-- M7LO5 Demonstrate the use of a text box in a form (below I use multiple text boxes) -->
+<!-- M7LO8 Demonstrate the use of a selection list in a form (below I use a selection for what viewers like the most on my website) -->
+<!-- M7LO9 Demonstrate the use of a text area in a form (in the last div I use a text area box) -->
+
+
+<aside>
+    <form id="review" action="application/x-www-form-urlencoded" method="GET">
+        <fieldset id="review">
+            <legend>Leave a Review</legend>
+
+            <div class="Colform">
+            <label for="name">Name</label>
+            <input name="Name" id="name" type="text" placeholder="name" />
+            </div>
+
+            <div class="Colform">
+            <label for="date">Date</label>
+            <input name="Date" id="date" type="date" />
+            </div>
+
+            <div class="Colform">
+            <label for="interest">What do you like most about this website?</label>
+            <select name="interestType" id="interest">
+                <option value="interest1" selected>Select</option>
+                <option value="interest2">The About page</option>
+                <option value="interest3">The Gallery</option>
+                <option value="interest4">The Materials page</option>
+                <option value="interest5">The New page</option>
+                <option value="interest6">The design and layout</option>
+            </select>
+            </div>
+
+            <div class="Colform">
+            <label for="fav">What was your favorite image from the Gallery page?</label>
+            <select>
+                <option value="interest1" selected>Select</option>
+                <option value="fav1">Black & White</option>
+                <option value="fav2">Animals & Characters</option>
+                <option value="fav3">Calligraph Quotes</option>
+                <option value="fav4">Zentangles</option>
+                <option value="fav5">Photographs</option>
+            </select>
+            </div>
+
+            <div class="Colform">
+            <label for="findabout">Where did you hear about this website?</label>
+            <input name="Findabout" id="findabout" type="text" />
+            </div>
+
+            <div class="Colform">
+            <label for="tech">Were there any technical difficulties while browsing?</label>
+            <input name="Tech" id="tech" type="text" />
+            </div>
+
+            <div class="Colform">
+            <label for="comment">Leave a commnent</label> 
+            <textarea name="Commentbox" id="comment" placeholder="comment"></textarea> 
+            </div>
+
+            <button>Submit</button>
+        </fieldset>
+    </form>
+</aside>
 
 <header>
     <h1>Contacts</h1>
@@ -116,7 +181,7 @@ Within the paragraph element below is the use of class selector named #id -->
 <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table 
      Below I use multiple rows in a table.-->
 
-<hr></hr>
+<hr class="i"></hr>
 
 <footer>
     <table>
