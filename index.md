@@ -4,7 +4,7 @@
 <link><a href="gallerypg"></link>
 <link><a href="materialspg"></link>
 <link><a href="newpg></link>
-<link><a href="styles.css"></link>
+<link><a href="styles.css" rel="stlesheet" type="text/css"></link>
 <link><a href="mediaqueries.css" rel="stylesheet" type="text/css"><link>
 <link><a href="mepic.jpg"></link>
 <link><a href="fadedyin&yang.png"></link>
