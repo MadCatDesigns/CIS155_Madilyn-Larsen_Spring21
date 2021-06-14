@@ -1046,6 +1046,7 @@ hr.n {
         display: flex;
         width: 13%;
         float: left;
+        clear: left;
     }
     .figurestyle3 {
         display: -webkit-flex;
